@@ -1,5 +1,11 @@
-# 💫 About Me:
-🔭 I'm currently working on: Building innovative web applications and developing AI-powered solutions<br>👯 I'm looking to collaborate on: Open source projects focused on web development and machine learning<br>🤝 I'm looking for help with: Advanced AI algorithms and cloud architecture optimization<br>🌱 I'm currently learning: TypeScript, Next.js, and diving deep into AI/ML technologies<br>💬 Ask me about: JavaScript, React, Python, and building scalable web applications<br>⚡ Fun fact: I can debug code faster than I can solve a Rubik's cube (and I'm pretty quick with the cube! 🎲)
+## 🌟 About Me
+
+- 🔭 **What I'm working on:** Crafting creative web applications and exploring AI-driven solutions.  
+- 👯 **Collaborations:** Interested in joining projects that combine web development with AI innovation.  
+- 🤝 **Seeking Help With:** Fine-tuning AI algorithms and mastering cloud-based infrastructures.  
+- 🌱 **Learning Journey:** Advancing my skills in Python, OpenCV, Selenium, and diving into JavaScript frameworks like React.  
+- 💬 **Ask Me About:** Building user-friendly web applications, scalable architecture, and coding best practices.  
+- ⚡ **Fun Fact:** I debug faster than I can solve a Rubik's cube, and I'm great with both!  
 
 
 ## 🌐 Socials:
