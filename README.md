@@ -1,11 +1,11 @@
 ## 🌟 About Me
 
-- 🔭 **What I'm working on:** Crafting creative web applications and exploring AI-driven solutions.  
-- 👯 **Collaborations:** Interested in joining projects that combine web development with AI innovation.  
-- 🤝 **Seeking Help With:** Fine-tuning AI algorithms and mastering cloud-based infrastructures.  
-- 🌱 **Learning Journey:** Advancing my skills in Python, OpenCV, Selenium, and diving into JavaScript frameworks like React.  
-- 💬 **Ask Me About:** Building user-friendly web applications, scalable architecture, and coding best practices.  
-- ⚡ **Fun Fact:** I debug faster than I can solve a Rubik's cube, and I'm great with both!  
+- 🔭 **What I'm working on:** Developing web applications and exploring AI/ML projects.  
+- 👯 **Collaborations:** Open to working on innovative web development and AI-powered solutions.  
+- 🌱 **Learning Journey:** Enhancing my skills in Python, OpenCV, Selenium, JavaScript, and CSS.  
+- 💬 **Ask Me About:** Debugging, building responsive web interfaces, and scalable solutions.  
+- ⚡ **Fun Fact:** My debugging skills are as sharp as my creativity in coding!  
+ 
 
 
 ## 🌐 Socials:
