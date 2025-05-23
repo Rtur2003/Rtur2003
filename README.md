@@ -123,7 +123,7 @@ console.log(`${hasan.superPower} activated! 🚀`);
 </table>
 
 ### 🎵 **Now Playing on Spotify**
-[![Spotify](https://spotify-recently-played-readme.vercel.app/api?user=31k2yiressmlrovaja47almvvhbm&count=1&unique=true)](https://open.spotify.com/user/31k2yiressmlrovaja47almvvhbm)
+[![Spotify](https://spotify-recently-played-readme.vercel.app/api?user=31k2yiressmlrovaja47almvvhbm&count=1&unique=true)]([https://open.spotify.com/user/31k2yiressmlrovaja47almvvhbm](https://open.spotify.com/intl-tr/artist/6D5NDnftFDOelT5ssMe0ef?si=n7BDgxjSRWComhBTxCKCsA))
 
 </div>
 
