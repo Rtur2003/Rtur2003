@@ -18,15 +18,8 @@
 
 ```javascript
 const hasan = {
-    🌍 location: "Turkey 🇹🇷",
-    🎯 currentMission: "Building AI-Powered Future",
-    🧠 mindset: "Think Different, Code Better",
-    🎮 gameLevel: "Senior Developer++",
-    ⚡ superPower: "Bug Hunting & Feature Creation",
-    🎨 creativity: "Infinite Loop",
-    📚 learning: "Never typeof undefined",
-    🤝 collaboration: "Always true",
-    funFact: "I debug in my dreams! 💭🐛"
+  ...;
+  ...,
 };
 
 console.log(`${hasan.superPower} activated! 🚀`);
