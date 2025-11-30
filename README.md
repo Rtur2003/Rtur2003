@@ -6,6 +6,7 @@
 <br><br>
 
 <h3>Creator • Developer • Composer</h3>
+<img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3Y2t3NzNhMWE3YzVydnQ1cGoyODE2cnVkNHVnMnNramNtamxrcmZkMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1vlBgKjXEz1jTtsuiH/giphy.gif" width="100%" />
 
 <br>
 
