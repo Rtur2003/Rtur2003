@@ -1,88 +1,28 @@
-# Hasan Arthur Altuntaş
+Hasan Arthur Altuntaş
+😂 Hello World!
 
-<div align="center">
+Hey there! I'm Hasan Arthur, a code-slinging, meme-loving developer who believes programming should be as fun as a Doge meme. When I'm not busy training AI models or squashing bugs, you'll find me dropping internet references and saying “much wow” at my own code. (I also play piano and compose music – because why limit creativity to just coding?)
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=26&duration=3000&pause=800&color=2F81F7&center=true&vCenter=true&width=700&lines=Computer+Vision+Engineer;AI+%2F+ML+Developer;Python+%26+Deep+Learning+Enthusiast;Building+Visual+Intelligence+Systems" />
+🤖 Coding & Comedy
 
-</div>
+Sometimes I tackle a project with pure Gigachad energy. No bug is safe; no algorithm is too daunting. In those moments, I'm coding like an absolute unit, optimizing everything and flexing my brain muscles (big galaxy brain vibes).
 
----
+Then reality hits... and suddenly I'm this dog at the keyboard with no idea what I'm doing! Whether it's a mysterious bug at 3 AM or a deployment that decided to go haywire, I embrace the absurdity and keep going. The good news: I always come out the other side wiser (and with a few more memes in my arsenal).
 
-<div align="center">
-<img src="assets/cover.gif" width="90%" />
-</div>
+🥽 Welcome to the Meme-verse
 
----
+In my world, code can be as mesmerizing as falling green Matrix code. I sometimes imagine I'm Neo (minus the trench coat) seeing patterns in the digital rain. That whole hacker-in-a-neon-room aesthetic? Totally my vibe.
 
-## 🚀 Tech Stack
-<div align="center">
-<img src="https://skillicons.dev/icons?i=python,opencv,tensorflow,pytorch,sklearn,flask,js,ts,html,css,linux,git,github,vscode&theme=dark" />
-</div>
+I'm also inspired by the wacky science of Rick & Morty – where absurd humor meets genius ideas. If a project gets unpredictable or chaotic, I just chalk it up as another portal adventure. In the end, creativity and curiosity drive me, whether I'm in a multiverse or a codebase.
 
----
+🚀 Let's Connect & Collaborate
 
-## 🎥 Visual Projects
+Are you a fellow meme connoisseur or have an epic project idea? Hit me up! I love meeting new people and building cool stuff together.
 
-<div align="center">
+<div align="center"> <a href="https://www.linkedin.com/in/hasan-arthur-altuntas/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin" /></a> <a href="https://www.instagram.com/rthur_54/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram" /></a> <a href="https://x.com/Rthur__1"><img src="https://img.shields.io/badge/X-1DA1F2?style=for-the-badge&logo=twitter" /></a> <a href="https://youtube.com/@HasanArthurAltuntaş"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube" /></a> </div>
 
-<video src="assets/cv_demo.mp4" width="85%" autoplay loop muted></video>
+Websites: hasanarthuraltuntas.com.tr (portfolio) • hasanarthuraltuntas.xyz (projects)
 
-<br><br>
+💖 Support My Work
 
-<video src="assets/object_detection.mp4" width="85%" autoplay loop muted></video>
-
-<br><br>
-
-<img src="assets/ml_flow.gif" width="85%" />
-
-</div>
-
----
-
-## 📊 GitHub Analytics
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Rtur2003&show_icons=true&theme=github_dark&hide_border=true" />
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rtur2003&layout=compact&theme=github_dark&hide_border=true" />
-
-<br><br>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Rtur2003&theme=github-dark-blue&hide_border=true" />
-
-</div>
-
----
-
-## ✨ Portfolio Highlights
-
-<div align="center">
-
-<img src="assets/portfolio1.gif" width="45%" />
-<img src="assets/portfolio2.gif" width="45%" />
-
-<img src="assets/portfolio3.gif" width="45%" />
-<img src="assets/portfolio4.gif" width="45%" />
-
-</div>
-
----
-
-## 🌐 Connect with Me
-
-<div align="center">
-
-<a href="https://www.linkedin.com/in/hasan-arthur-altuntas/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin" /></a>
-<a href="https://www.instagram.com/rthur_54/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram" /></a>
-<a href="https://x.com/Rthur__1"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter" /></a>
-<a href="https://youtube.com/@HasanArthurAltuntaş"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube" /></a>
-
-</div>
-
----
-
-<div align="center">
-<img src="https://komarev.com/ghpvc/?username=Rtur2003&color=2F81F7&style=flat" />
-<br><br>
-<b>"Building intelligent systems through visual understanding."</b>
-</div>
+If my content made you chuckle or go "🔥 epic!", consider fueling my next adventure. Every bit of support helps me keep the creativity flowing (and the coffee brewing). Thank you, kind human!
