@@ -47,31 +47,43 @@
 
 <div align="center">
 
-<!-- GitHub istatistikleri (iki kart, bozulma yok) -->
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Rtur2003&theme=tokyonight" width="450" />
+<!-- Genel profil detayı: modern tek kart -->
+<img
+  src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Rtur2003&theme=tokyonight"
+  width="90%"
+  alt="Profile details"
+/>
 
+<br/><br/>
+
+<!-- Stats + streak ikilisi -->
+<img
+  src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Rtur2003&theme=tokyonight"
+  height="160"
+  alt="GitHub stats"
+/>
 <img
   src="https://github-readme-streak-stats.herokuapp.com?user=Rtur2003&theme=tokyonight&hide_border=true"
-  height="170"
+  height="160"
   alt="GitHub streak"
 />
 
 <br/><br/>
 
-<!-- Özet dil ve aktivite kartları (top-langs alternatifi, stabil) -->
+<!-- Dil ve aktivite kartları -->
 <img
   src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Rtur2003&theme=tokyonight"
-  height="160"
+  height="155"
   alt="Repos per language"
 />
 <img
   src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Rtur2003&theme=tokyonight"
-  height="160"
+  height="155"
   alt="Most commit language"
 />
 <img
   src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Rtur2003&theme=tokyonight"
-  height="160"
+  height="155"
   alt="Productive time"
 />
 
@@ -83,6 +95,25 @@
   width="90%"
   alt="GitHub trophies"
 />
+
+</div>
+
+---
+
+<!-- Öne çıkan projeler: kısa ama zekice bölüm -->
+<div align="center">
+
+### Featured Projects
+
+<a href="https://github.com/Rtur2003/Akilli-Sehir-Sakarya">
+  <img src="https://img.shields.io/badge/Akıllı_Şehir_Sakarya-181717?style=for-the-badge&logo=github&logoColor=white" alt="Akıllı Şehir Sakarya"/>
+</a>
+<a href="https://github.com/Rtur2003/VoteBot">
+  <img src="https://img.shields.io/badge/VoteBot-181717?style=for-the-badge&logo=python&logoColor=white" alt="VoteBot"/>
+</a>
+<a href="https://github.com/Rtur2003/CommendAI">
+  <img src="https://img.shields.io/badge/CommendAI-181717?style=for-the-badge&logo=googlecloud&logoColor=white" alt="CommendAI"/>
+</a>
 
 </div>
 
