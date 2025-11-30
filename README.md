@@ -48,11 +48,8 @@
 <div align="center">
 
 <!-- GitHub istatistikleri (iki kart, bozulma yok) -->
-<img
-  src="https://github-readme-stats.vercel.app/api?username=Rtur2003&show_icons=true&theme=tokyonight&count_private=true&hide_border=true"
-  height="170"
-  alt="GitHub stats"
-/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Rtur2003&theme=tokyonight" width="450" />
+
 <img
   src="https://github-readme-streak-stats.herokuapp.com?user=Rtur2003&theme=tokyonight&hide_border=true"
   height="170"
