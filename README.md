@@ -4,7 +4,7 @@
 <h3>Creator • Developer • Composer</h3>
 
 <!-- Pixel coder GIF -->
-<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWRndGJyZW55d3Z1emN3M2JiZnVvbmI2Z29oczl2MHQwNHQ2bjQwYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2Z7EhktnSahCQ7mOGT/giphy.gif"
+<img src="https://media.giphy.com/media/2Z7EhktnSahCQ7mOGT/giphy.gif" 
      width="100%"
      alt="Pixel character coding at night" />
 
