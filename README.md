@@ -5,7 +5,7 @@
 
 <!-- Pixel coder GIF -->
 <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWRndGJyZW55d3Z1emN3M2JiZnVvbmI2Z29oczl2MHQwNHQ2bjQwYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2Z7EhktnSahCQ7mOGT/giphy.gif"
-     width="420"
+     width="100%"
      alt="Pixel character coding at night" />
 
 <br/><br/>
