@@ -10,6 +10,17 @@
 
 <br/><br/>
 
+<!-- Tech stack (minimal, profesyonel) -->
+<p>
+  <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/ROS-22314E?style=for-the-badge&logo=ros&logoColor=white" alt="ROS"/>
+</p>
+
+<br/>
+
 <!-- Sosyal & link butonları (profesyonel badge stili) -->
 <a href="https://hasanarthuraltuntas.com.tr">
   <img src="https://img.shields.io/badge/Portfolio-111111?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Main Portfolio"/>
@@ -36,7 +47,7 @@
 
 <div align="center">
 
-<!-- GitHub istatistikleri -->
+<!-- GitHub istatistikleri (iki kart, bozulma yok) -->
 <img
   src="https://github-readme-stats.vercel.app/api?username=Rtur2003&show_icons=true&theme=tokyonight&count_private=true&hide_border=true"
   height="170"
@@ -47,10 +58,24 @@
   height="170"
   alt="GitHub streak"
 />
+
+<br/><br/>
+
+<!-- Özet dil ve aktivite kartları (top-langs alternatifi, stabil) -->
 <img
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rtur2003&layout=compact&theme=tokyonight&hide_border=true"
-  height="170"
-  alt="Most used languages"
+  src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Rtur2003&theme=tokyonight"
+  height="160"
+  alt="Repos per language"
+/>
+<img
+  src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Rtur2003&theme=tokyonight"
+  height="160"
+  alt="Most commit language"
+/>
+<img
+  src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Rtur2003&theme=tokyonight"
+  height="160"
+  alt="Productive time"
 />
 
 <br/><br/>
