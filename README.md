@@ -4,6 +4,9 @@
 <h3>Creator • Developer • Composer</h3>
 
 <!-- Pixel coder GIF -->
+<img src="https://media.giphy.com/media/9YqiiB9MLZjJ6/giphy.gif" 
+     width="100%"
+     alt="Pixel character coding at night" />
 <img src="https://media.giphy.com/media/2Z7EhktnSahCQ7mOGT/giphy.gif" 
      width="100%"
      alt="Pixel character coding at night" />
