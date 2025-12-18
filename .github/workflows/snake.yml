@@ -18,6 +18,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     
+    permissions:
+      contents: write
+    
     steps:
       # Checkout the repository
       - name: Checkout
