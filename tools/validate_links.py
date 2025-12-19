@@ -19,6 +19,10 @@ class LinkValidator:
     """Validates links in markdown content."""
 
     def __init__(self, timeout: int = 10):
+        if timeout <= 0:
+            raise ValueError("Timeout must be positive")
+        if timeout > 300:
+            raise ValueError("Timeout exceeds maximum allowed value of 300 seconds")
         self.timeout = timeout
         self.session = requests.Session()
         self.session.headers.update({
