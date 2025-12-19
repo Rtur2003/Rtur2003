@@ -10,6 +10,7 @@ import logging
 import re
 import sys
 import time
+from dataclasses import dataclass
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -21,6 +22,15 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
+
+
+@dataclass
+class ValidationResult:
+    """Result of URL validation."""
+
+    url: str
+    is_valid: bool
+    status_message: str
 
 
 class LinkValidator:
@@ -51,17 +61,17 @@ class LinkValidator:
         parsed = urlparse(url)
         return parsed.scheme in ('http', 'https')
 
-    def validate_url(self, url: str) -> tuple[str, bool, str]:
+    def validate_url(self, url: str) -> ValidationResult:
         """
         Validate a single URL.
 
         Returns:
-            Tuple of (url, is_valid, status_message)
+            ValidationResult with url, validity status, and message
         """
         if not url or not isinstance(url, str):
-            return (url, False, "Error: Invalid URL format")
+            return ValidationResult(url, False, "Error: Invalid URL format")
         if len(url) > 2048:
-            return (url, False, "Error: URL exceeds maximum length")
+            return ValidationResult(url, False, "Error: URL exceeds maximum length")
 
         max_retries = 3
         for attempt in range(max_retries):
@@ -83,7 +93,7 @@ class LinkValidator:
                 is_valid = response.status_code < 400
                 status = f"HTTP {response.status_code}"
 
-                return (url, is_valid, status)
+                return ValidationResult(url, is_valid, status)
 
             except (
                 requests.exceptions.Timeout,
@@ -97,11 +107,11 @@ class LinkValidator:
                     )
                     time.sleep(wait_time)
                     continue
-                return (url, False, f"Error: {type(e).__name__}")
+                return ValidationResult(url, False, f"Error: {type(e).__name__}")
             except RequestException as e:
-                return (url, False, f"Error: {type(e).__name__}")
+                return ValidationResult(url, False, f"Error: {type(e).__name__}")
 
-    def validate_file(self, filepath: Path) -> list[tuple[str, bool, str]]:
+    def validate_file(self, filepath: Path) -> list[ValidationResult]:
         """Validate all links in a file."""
         if not isinstance(filepath, Path):
             raise TypeError("filepath must be a Path object")
@@ -154,13 +164,13 @@ def main():
     failed = []
     passed = []
 
-    for url, is_valid, status in results:
-        if is_valid:
-            passed.append((url, status))
-            print(f"✓ {url} - {status}")
+    for result in results:
+        if result.is_valid:
+            passed.append((result.url, result.status_message))
+            print(f"✓ {result.url} - {result.status_message}")
         else:
-            failed.append((url, status))
-            print(f"✗ {url} - {status}")
+            failed.append((result.url, result.status_message))
+            print(f"✗ {result.url} - {result.status_message}")
 
     print(f"\nResults: {len(passed)} passed, {len(failed)} failed")
 
