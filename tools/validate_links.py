@@ -111,6 +111,9 @@ class LinkValidator:
             except RequestException as e:
                 return ValidationResult(url, False, f"Error: {type(e).__name__}")
 
+        # Fallback for unexpected loop exit
+        return ValidationResult(url, False, "Error: Unexpected validation failure")
+
     def validate_file(self, filepath: Path) -> list[ValidationResult]:
         """Validate all links in a file."""
         if not isinstance(filepath, Path):
@@ -140,7 +143,7 @@ class LinkValidator:
         return results
 
 
-def main():
+def main() -> None:
     """CLI entry point."""
     if len(sys.argv) < 2:
         print("Usage: python validate_links.py <markdown_file>")
