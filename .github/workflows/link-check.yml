@@ -1,0 +1,43 @@
+name: Link Validation
+
+on:
+  # Check links on PR
+  pull_request:
+    paths:
+      - 'README.md'
+      - '**.md'
+
+  # Check links weekly
+  schedule:
+    - cron: '0 0 * * 0'
+
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  validate-links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4
+
+      - name: Validate links in README
+        run: |
+          python tools/validate_links.py README.md
+
+      - name: Report results
+        if: failure()
+        run: |
+          echo "Link validation failed. Please check the logs above for broken links."
+          exit 1
