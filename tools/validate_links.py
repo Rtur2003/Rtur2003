@@ -49,6 +49,11 @@ class LinkValidator:
         Returns:
             Tuple of (url, is_valid, status_message)
         """
+        if not url or not isinstance(url, str):
+            return (url, False, "Error: Invalid URL format")
+        if len(url) > 2048:
+            return (url, False, "Error: URL exceeds maximum length")
+
         try:
             response = self.session.head(
                 url,
