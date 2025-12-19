@@ -6,6 +6,7 @@ Validates URLs in markdown files to detect broken links (404s).
 Designed for CI/CD integration and local development checks.
 """
 
+import logging
 import re
 import sys
 import time
@@ -14,6 +15,12 @@ from urllib.parse import urlparse
 
 import requests
 from requests.exceptions import RequestException
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
 
 
 class LinkValidator:
@@ -29,6 +36,7 @@ class LinkValidator:
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (compatible; LinkValidator/1.0)'
         })
+        logger.debug(f"LinkValidator initialized with timeout={timeout}s")
 
     def extract_links(self, content: str) -> list[str]:
         """Extract all URLs from markdown content."""
@@ -83,6 +91,10 @@ class LinkValidator:
             ) as e:
                 if attempt < max_retries - 1:
                     wait_time = 2 ** attempt
+                    logger.debug(
+                        f"Retry {attempt + 1}/{max_retries} for {url} "
+                        f"after {wait_time}s"
+                    )
                     time.sleep(wait_time)
                     continue
                 return (url, False, f"Error: {type(e).__name__}")
@@ -98,6 +110,8 @@ class LinkValidator:
         if not filepath.is_file():
             raise ValueError(f"Path is not a file: {filepath}")
 
+        logger.info(f"Validating links in file: {filepath}")
+
         try:
             content = filepath.read_text(encoding='utf-8')
         except UnicodeDecodeError as e:
@@ -106,6 +120,7 @@ class LinkValidator:
             ) from e
 
         urls = self.extract_links(content)
+        logger.info(f"Found {len(urls)} HTTP/HTTPS links to validate")
 
         results = []
         for url in urls:
