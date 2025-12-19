@@ -74,6 +74,13 @@ class LinkValidator:
 
     def validate_file(self, filepath: Path) -> list[tuple[str, bool, str]]:
         """Validate all links in a file."""
+        if not isinstance(filepath, Path):
+            raise TypeError("filepath must be a Path object")
+        if not filepath.exists():
+            raise FileNotFoundError(f"File not found: {filepath}")
+        if not filepath.is_file():
+            raise ValueError(f"Path is not a file: {filepath}")
+
         try:
             content = filepath.read_text(encoding='utf-8')
         except UnicodeDecodeError as e:
