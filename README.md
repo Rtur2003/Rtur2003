@@ -175,15 +175,6 @@ I build systems, compose atmospheres, and ship things that actually work.
 
 ## Featured Projects
 
-<p><b>Akıllı Şehir Sakarya</b><br/>
-Urban data visualization and decision layers built with Angular & Leaflet.</p>
-
-<a href="https://github.com/Rtur2003/Akilli-Sehir-Sakarya">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-</a>
-
-<br/><br/>
-
 <p><b>VoteBot</b><br/>
 Python-based automation experiments focused on reliability and scale.</p>
 
@@ -193,12 +184,8 @@ Python-based automation experiments focused on reliability and scale.</p>
 
 <br/><br/>
 
-<p><b>CommendAI</b><br/>
-AI-assisted content interaction system with queue-based architecture.</p>
-
-<a href="https://github.com/Rtur2003/CommendAI">
-  <img src="https://img.shields.io/badge/AI_System-181717?style=for-the-badge&logo=googlecloud&logoColor=white" />
-</a>
+<p><b>More projects coming soon...</b><br/>
+Working on smart city systems, AI integration, and robotics development.</p>
 
 </div>
 
