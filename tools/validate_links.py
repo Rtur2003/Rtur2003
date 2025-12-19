@@ -8,6 +8,7 @@ Designed for CI/CD integration and local development checks.
 
 import re
 import sys
+import time
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -54,28 +55,39 @@ class LinkValidator:
         if len(url) > 2048:
             return (url, False, "Error: URL exceeds maximum length")
 
-        try:
-            response = self.session.head(
-                url,
-                timeout=self.timeout,
-                allow_redirects=True
-            )
-
-            # Some servers reject HEAD, try GET on client errors
-            if response.status_code >= 400:
-                response = self.session.get(
+        max_retries = 3
+        for attempt in range(max_retries):
+            try:
+                response = self.session.head(
                     url,
                     timeout=self.timeout,
                     allow_redirects=True
                 )
 
-            is_valid = response.status_code < 400
-            status = f"HTTP {response.status_code}"
+                # Some servers reject HEAD, try GET on client errors
+                if response.status_code >= 400:
+                    response = self.session.get(
+                        url,
+                        timeout=self.timeout,
+                        allow_redirects=True
+                    )
 
-            return (url, is_valid, status)
+                is_valid = response.status_code < 400
+                status = f"HTTP {response.status_code}"
 
-        except RequestException as e:
-            return (url, False, f"Error: {type(e).__name__}")
+                return (url, is_valid, status)
+
+            except (
+                requests.exceptions.Timeout,
+                requests.exceptions.ConnectionError,
+            ) as e:
+                if attempt < max_retries - 1:
+                    wait_time = 2 ** attempt
+                    time.sleep(wait_time)
+                    continue
+                return (url, False, f"Error: {type(e).__name__}")
+            except RequestException as e:
+                return (url, False, f"Error: {type(e).__name__}")
 
     def validate_file(self, filepath: Path) -> list[tuple[str, bool, str]]:
         """Validate all links in a file."""
