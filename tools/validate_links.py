@@ -35,6 +35,9 @@ class ValidationResult:
 class LinkValidator:
     """Validates links in markdown content."""
 
+    RETRY_BASE = 2
+    MAX_RETRIES = 3
+
     def __init__(self, timeout: int = 10):
         if timeout <= 0:
             raise ValueError("Timeout must be positive")
@@ -67,13 +70,12 @@ class LinkValidator:
         Returns:
             ValidationResult with url, validity status, and message
         """
-        if not url or not isinstance(url, str):
+        if not isinstance(url, str) or not url:
             return ValidationResult(url, False, "Error: Invalid URL format")
         if len(url) > 2048:
             return ValidationResult(url, False, "Error: URL exceeds maximum length")
 
-        max_retries = 3
-        for attempt in range(max_retries):
+        for attempt in range(self.MAX_RETRIES):
             try:
                 response = self.session.head(
                     url, timeout=self.timeout, allow_redirects=True
@@ -94,10 +96,10 @@ class LinkValidator:
                 requests.exceptions.Timeout,
                 requests.exceptions.ConnectionError,
             ) as e:
-                if attempt < max_retries - 1:
-                    wait_time = 2**attempt
+                if attempt < self.MAX_RETRIES - 1:
+                    wait_time = self.RETRY_BASE**attempt
                     logger.debug(
-                        f"Retry {attempt + 1}/{max_retries} for {url} "
+                        f"Retry {attempt + 1}/{self.MAX_RETRIES} for {url} "
                         f"after {wait_time}s"
                     )
                     time.sleep(wait_time)
@@ -106,7 +108,6 @@ class LinkValidator:
             except RequestException as e:
                 return ValidationResult(url, False, f"Error: {type(e).__name__}")
 
-        # Fallback for unexpected loop exit
         return ValidationResult(url, False, "Error: Unexpected validation failure")
 
     def validate_file(self, filepath: Path) -> list[ValidationResult]:
