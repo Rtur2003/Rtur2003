@@ -18,8 +18,7 @@ import requests
 from requests.exceptions import RequestException
 
 logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
 logger = logging.getLogger(__name__)
 
@@ -43,14 +42,14 @@ class LinkValidator:
             raise ValueError("Timeout exceeds maximum allowed value of 300 seconds")
         self.timeout = timeout
         self.session = requests.Session()
-        self.session.headers.update({
-            'User-Agent': 'Mozilla/5.0 (compatible; LinkValidator/1.0)'
-        })
+        self.session.headers.update(
+            {"User-Agent": "Mozilla/5.0 (compatible; LinkValidator/1.0)"}
+        )
         logger.debug(f"LinkValidator initialized with timeout={timeout}s")
 
     def extract_links(self, content: str) -> list[str]:
         """Extract all URLs from markdown content."""
-        markdown_links = re.findall(r'\[([^\]]+)\]\(([^\)]+)\)', content)
+        markdown_links = re.findall(r"\[([^\]]+)\]\(([^\)]+)\)", content)
         html_links = re.findall(r'(?:href|src)="([^"]+)"', content)
 
         urls = [url for _, url in markdown_links] + html_links
@@ -59,7 +58,7 @@ class LinkValidator:
     def _is_http_url(self, url: str) -> bool:
         """Check if URL is an HTTP/HTTPS URL."""
         parsed = urlparse(url)
-        return parsed.scheme in ('http', 'https')
+        return parsed.scheme in ("http", "https")
 
     def validate_url(self, url: str) -> ValidationResult:
         """
@@ -77,17 +76,13 @@ class LinkValidator:
         for attempt in range(max_retries):
             try:
                 response = self.session.head(
-                    url,
-                    timeout=self.timeout,
-                    allow_redirects=True
+                    url, timeout=self.timeout, allow_redirects=True
                 )
 
                 # Some servers reject HEAD, try GET on client errors
                 if response.status_code >= 400:
                     response = self.session.get(
-                        url,
-                        timeout=self.timeout,
-                        allow_redirects=True
+                        url, timeout=self.timeout, allow_redirects=True
                     )
 
                 is_valid = response.status_code < 400
@@ -100,7 +95,7 @@ class LinkValidator:
                 requests.exceptions.ConnectionError,
             ) as e:
                 if attempt < max_retries - 1:
-                    wait_time = 2 ** attempt
+                    wait_time = 2**attempt
                     logger.debug(
                         f"Retry {attempt + 1}/{max_retries} for {url} "
                         f"after {wait_time}s"
@@ -126,7 +121,7 @@ class LinkValidator:
         logger.info(f"Validating links in file: {filepath}")
 
         try:
-            content = filepath.read_text(encoding='utf-8')
+            content = filepath.read_text(encoding="utf-8")
         except UnicodeDecodeError as e:
             raise ValueError(
                 f"Unable to read file {filepath}: invalid UTF-8 encoding"
