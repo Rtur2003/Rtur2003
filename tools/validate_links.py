@@ -53,8 +53,8 @@ class LinkValidator:
                 allow_redirects=True
             )
             
-            # Some servers don't support HEAD, try GET
-            if response.status_code == 405:
+            # Some servers reject HEAD, try GET on client errors
+            if response.status_code >= 400:
                 response = self.session.get(
                     url, 
                     timeout=self.timeout, 
@@ -71,7 +71,13 @@ class LinkValidator:
     
     def validate_file(self, filepath: Path) -> List[Tuple[str, bool, str]]:
         """Validate all links in a file."""
-        content = filepath.read_text(encoding='utf-8')
+        try:
+            content = filepath.read_text(encoding='utf-8')
+        except UnicodeDecodeError as e:
+            raise ValueError(
+                f"Unable to read file {filepath}: invalid UTF-8 encoding"
+            ) from e
+        
         urls = self.extract_links(content)
         
         results = []
