@@ -9,7 +9,6 @@ Designed for CI/CD integration and local development checks.
 import re
 import sys
 from pathlib import Path
-from typing import List, Tuple
 from urllib.parse import urlparse
 
 import requests
@@ -26,7 +25,7 @@ class LinkValidator:
             'User-Agent': 'Mozilla/5.0 (compatible; LinkValidator/1.0)'
         })
 
-    def extract_links(self, content: str) -> List[str]:
+    def extract_links(self, content: str) -> list[str]:
         """Extract all URLs from markdown content."""
         markdown_links = re.findall(r'\[([^\]]+)\]\(([^\)]+)\)', content)
         html_links = re.findall(r'(?:href|src)="([^"]+)"', content)
@@ -39,7 +38,7 @@ class LinkValidator:
         parsed = urlparse(url)
         return parsed.scheme in ('http', 'https')
 
-    def validate_url(self, url: str) -> Tuple[str, bool, str]:
+    def validate_url(self, url: str) -> tuple[str, bool, str]:
         """
         Validate a single URL.
 
@@ -69,7 +68,7 @@ class LinkValidator:
         except RequestException as e:
             return (url, False, f"Error: {type(e).__name__}")
 
-    def validate_file(self, filepath: Path) -> List[Tuple[str, bool, str]]:
+    def validate_file(self, filepath: Path) -> list[tuple[str, bool, str]]:
         """Validate all links in a file."""
         try:
             content = filepath.read_text(encoding='utf-8')
