@@ -1,11 +1,11 @@
 <div align="center">
 
-# Hasan Arthur Altuntaş
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=70A5FD&height=120&section=header&text=Hasan%20Arthur%20Altuntaş&fontSize=35&fontColor=fff&animation=fadeIn&fontAlignY=38" />
 
-### Creator • Developer • Composer
+### 🎨 Creator • 💻 Developer • 🎵 Composer
 
 <p>
-I build systems, compose atmospheres, and ship things that actually work.
+<i>I build systems, compose atmospheres, and ship things that actually work.</i>
 </p>
 
 <img
@@ -43,7 +43,9 @@ I build systems, compose atmospheres, and ship things that actually work.
 
 ## 🚀 Tech Stack
 
-#### Frontend Development
+<details open>
+<summary><b>🎨 Frontend Development</b></summary>
+<br/>
 <p>
   <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
@@ -51,21 +53,28 @@ I build systems, compose atmospheres, and ship things that actually work.
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
 </p>
+</details>
 
-#### Backend & Systems
+<details open>
+<summary><b>⚙️ Backend & Systems</b></summary>
+<br/>
 <p>
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
   <img src="https://img.shields.io/badge/ROS-22314E?style=for-the-badge&logo=ros&logoColor=white" />
 </p>
+</details>
 
-#### Tools & Technologies
+<details open>
+<summary><b>🛠️ Tools & Technologies</b></summary>
+<br/>
 <p>
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/Leaflet-199900?style=for-the-badge&logo=leaflet&logoColor=white" />
   <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
 </p>
+</details>
 
 ---
 
@@ -96,24 +105,30 @@ I build systems, compose atmospheres, and ship things that actually work.
 
 <div align="center">
 
-### What I Do
+### 💫 What I Do
 
 <table>
 <tr>
-<td width="33%" align="center">
-<img src="https://img.icons8.com/clouds/100/000000/code.png"/>
-<h3>Development</h3>
+<td width="33%" align="center" valign="top">
+<br/>
+<div style="font-size: 4rem;">💻</div>
+<h3><b>Development</b></h3>
 <p>Building scalable web applications and systems with modern frameworks</p>
+<br/>
 </td>
-<td width="33%" align="center">
-<img src="https://img.icons8.com/clouds/100/000000/music.png"/>
-<h3>Music Production</h3>
+<td width="33%" align="center" valign="top">
+<br/>
+<div style="font-size: 4rem;">🎵</div>
+<h3><b>Music Production</b></h3>
 <p>Composing atmospheric soundtracks and digital music</p>
+<br/>
 </td>
-<td width="33%" align="center">
-<img src="https://img.icons8.com/clouds/100/000000/artificial-intelligence.png"/>
-<h3>Robotics</h3>
+<td width="33%" align="center" valign="top">
+<br/>
+<div style="font-size: 4rem;">🤖</div>
+<h3><b>Robotics</b></h3>
 <p>Working with ROS and automation systems</p>
+<br/>
 </td>
 </tr>
 </table>
@@ -124,12 +139,30 @@ I build systems, compose atmospheres, and ship things that actually work.
 
 <div align="center">
 
-### Currently Working On
+### 🎯 Currently Working On
 
-🔭 **Smart City Systems** - Urban data visualization platforms  
-🌱 **AI Integration** - Exploring AI-assisted content systems  
-🎵 **Music Projects** - Creating new compositions and soundscapes  
-🤖 **Robotics Development** - ROS-based automation experiments
+<table>
+<tr>
+<td width="50%">
+
+**🔭 Smart City Systems**  
+Urban data visualization platforms
+
+**🎵 Music Projects**  
+Creating new compositions and soundscapes
+
+</td>
+<td width="50%">
+
+**🌱 AI Integration**  
+Exploring AI-assisted content systems
+
+**🤖 Robotics Development**  
+ROS-based automation experiments
+
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -234,12 +267,14 @@ Currently working on:
 
 <br/><br/>
 
-**Quiet work. Loud results.**
+**✨ Quiet work. Loud results. ✨**
 
 <br/>
 
 ---
 
 <sub>Built with ❤️ using Markdown • Maintained with Python tooling</sub>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=70A5FD&height=100&section=footer" />
 
 </div>
