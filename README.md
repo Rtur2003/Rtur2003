@@ -111,21 +111,21 @@
 <tr>
 <td width="33%" align="center" valign="top">
 <br/>
-<h1>💻</h1>
+<div style="font-size: 4rem;">💻</div>
 <h3><b>Development</b></h3>
 <p>Building scalable web applications and systems with modern frameworks</p>
 <br/>
 </td>
 <td width="33%" align="center" valign="top">
 <br/>
-<h1>🎵</h1>
+<div style="font-size: 4rem;">🎵</div>
 <h3><b>Music Production</b></h3>
 <p>Composing atmospheric soundtracks and digital music</p>
 <br/>
 </td>
 <td width="33%" align="center" valign="top">
 <br/>
-<h1>🤖</h1>
+<div style="font-size: 4rem;">🤖</div>
 <h3><b>Robotics</b></h3>
 <p>Working with ROS and automation systems</p>
 <br/>
