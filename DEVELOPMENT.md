@@ -4,6 +4,12 @@
 
 This repository contains the GitHub profile README for Hasan Arthur Altuntaş, along with Python-based tooling for quality assurance and link validation.
 
+## Quick Links
+
+* [Contributing Guidelines](CONTRIBUTING.md)
+* [Code of Conduct](CODE_OF_CONDUCT.md)
+* [License](LICENSE)
+
 ## Project Structure
 
 ```
@@ -17,6 +23,10 @@ This repository contains the GitHub profile README for Hasan Arthur Altuntaş, a
 │       ├── snake.yml   # Contribution graph generator
 │       └── link-check.yml  # Link validation CI
 ├── README.md           # Profile page
+├── DEVELOPMENT.md      # This file
+├── CONTRIBUTING.md     # Contribution guidelines
+├── CODE_OF_CONDUCT.md  # Community guidelines
+├── LICENSE             # MIT License
 └── pyproject.toml      # Python project config
 ```
 
@@ -92,6 +102,13 @@ ruff check .
 
 ```bash
 black .
+isort .
+```
+
+### Type Checking
+
+```bash
+mypy tools/
 ```
 
 ### Pre-commit
@@ -114,4 +131,30 @@ This project follows strict engineering discipline:
 - **Python-first**: All tooling in Python
 - **Atomic commits**: One logical change per commit
 - **Zero technical debt**: No known issues left unaddressed
+- **Type safety**: Full mypy compliance with strict settings
 - **Defensive validation**: Explicit guards and error handling
+- **Structured logging**: Operational visibility at all levels
+
+## Architecture
+
+### Validation Module
+
+The link validator (`tools/validate_links.py`) follows these design principles:
+
+* **Separation of concerns**: Validation logic separate from CLI
+* **Type safety**: Full type annotations with dataclasses
+* **Robustness**: Input validation, retry logic, timeout bounds
+* **Observability**: Structured logging for debugging
+* **Testability**: Pure functions with clear interfaces
+
+### Quality Gates
+
+Every commit must pass:
+
+1. **Ruff** - Code quality and style
+2. **Black** - Consistent formatting
+3. **isort** - Import organization
+4. **mypy** - Static type checking
+5. **pytest** - All unit tests
+
+These run automatically via pre-commit hooks and CI.
