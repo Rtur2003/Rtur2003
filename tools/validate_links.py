@@ -18,7 +18,19 @@ from urllib.parse import urlparse
 import requests
 from requests.exceptions import RequestException
 
-from tools.config import ValidationConfig
+# Handle both direct script execution and module import
+if __package__ is None or __package__ == "":
+    # Direct script execution - add parent to path
+    import sys
+    from pathlib import Path
+
+    parent_dir = Path(__file__).parent.parent
+    if str(parent_dir) not in sys.path:
+        sys.path.insert(0, str(parent_dir))
+    from tools.config import ValidationConfig
+else:
+    # Module import - use relative import
+    from .config import ValidationConfig
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
