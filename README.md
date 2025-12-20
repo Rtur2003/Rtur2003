@@ -96,24 +96,30 @@ I build systems, compose atmospheres, and ship things that actually work.
 
 <div align="center">
 
-### What I Do
+### 💫 What I Do
 
 <table>
 <tr>
-<td width="33%" align="center">
-<h2>💻</h2>
-<h3>Development</h3>
+<td width="33%" align="center" valign="top">
+<br/>
+<h1>💻</h1>
+<h3><b>Development</b></h3>
 <p>Building scalable web applications and systems with modern frameworks</p>
+<br/>
 </td>
-<td width="33%" align="center">
-<h2>🎵</h2>
-<h3>Music Production</h3>
+<td width="33%" align="center" valign="top">
+<br/>
+<h1>🎵</h1>
+<h3><b>Music Production</b></h3>
 <p>Composing atmospheric soundtracks and digital music</p>
+<br/>
 </td>
-<td width="33%" align="center">
-<h2>🤖</h2>
-<h3>Robotics</h3>
+<td width="33%" align="center" valign="top">
+<br/>
+<h1>🤖</h1>
+<h3><b>Robotics</b></h3>
 <p>Working with ROS and automation systems</p>
+<br/>
 </td>
 </tr>
 </table>
@@ -124,12 +130,30 @@ I build systems, compose atmospheres, and ship things that actually work.
 
 <div align="center">
 
-### Currently Working On
+### 🎯 Currently Working On
 
-🔭 **Smart City Systems** - Urban data visualization platforms  
-🌱 **AI Integration** - Exploring AI-assisted content systems  
-🎵 **Music Projects** - Creating new compositions and soundscapes  
-🤖 **Robotics Development** - ROS-based automation experiments
+<table>
+<tr>
+<td width="50%">
+
+**🔭 Smart City Systems**  
+Urban data visualization platforms
+
+**🎵 Music Projects**  
+Creating new compositions and soundscapes
+
+</td>
+<td width="50%">
+
+**🌱 AI Integration**  
+Exploring AI-assisted content systems
+
+**🤖 Robotics Development**  
+ROS-based automation experiments
+
+</td>
+</tr>
+</table>
 
 </div>
 
