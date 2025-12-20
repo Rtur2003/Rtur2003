@@ -15,8 +15,10 @@ This repository contains the GitHub profile README for Hasan Arthur Altuntaş, a
 ```
 .
 ├── tools/               # Python utilities
+│   ├── config.py        # Configuration management
 │   └── validate_links.py  # Link validation tool
 ├── tests/              # Unit tests
+│   ├── test_config.py
 │   └── test_validate_links.py
 ├── .github/            # GitHub workflows
 │   └── workflows/
@@ -27,7 +29,8 @@ This repository contains the GitHub profile README for Hasan Arthur Altuntaş, a
 ├── CONTRIBUTING.md     # Contribution guidelines
 ├── CODE_OF_CONDUCT.md  # Community guidelines
 ├── LICENSE             # MIT License
-└── pyproject.toml      # Python project config
+├── pyproject.toml      # Python project config
+└── requirements-dev.txt # Development dependencies
 ```
 
 ## Setup
@@ -73,8 +76,10 @@ python tools/validate_links.py README.md
 **Features:**
 - Extracts links from markdown and HTML
 - HEAD request with GET fallback
+- Configurable timeouts and retry logic
 - Clear pass/fail reporting
 - Exit code for CI integration
+- Centralized configuration management
 
 ## Testing
 
@@ -141,11 +146,15 @@ This project follows strict engineering discipline:
 
 The link validator (`tools/validate_links.py`) follows these design principles:
 
-* **Separation of concerns**: Validation logic separate from CLI
+* **Separation of concerns**: 
+  - Configuration in `tools/config.py`
+  - Validation logic in `tools/validate_links.py`
+  - CLI interface separated from core logic
 * **Type safety**: Full type annotations with dataclasses
 * **Robustness**: Input validation, retry logic, timeout bounds
 * **Observability**: Structured logging for debugging
-* **Testability**: Pure functions with clear interfaces
+* **Testability**: Pure functions with clear interfaces and dependency injection
+* **Configurability**: Centralized configuration with validation
 
 ### Quality Gates
 
