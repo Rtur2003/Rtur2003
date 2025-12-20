@@ -1,11 +1,11 @@
 <div align="center">
 
-# Hasan Arthur Altuntaş
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=70A5FD&height=120&section=header&text=Hasan%20Arthur%20Altuntaş&fontSize=35&fontColor=fff&animation=fadeIn&fontAlignY=38" />
 
-### Creator • Developer • Composer
+### 🎨 Creator • 💻 Developer • 🎵 Composer
 
 <p>
-I build systems, compose atmospheres, and ship things that actually work.
+<i>I build systems, compose atmospheres, and ship things that actually work.</i>
 </p>
 
 <img
@@ -43,7 +43,9 @@ I build systems, compose atmospheres, and ship things that actually work.
 
 ## 🚀 Tech Stack
 
-#### Frontend Development
+<details open>
+<summary><b>🎨 Frontend Development</b></summary>
+<br/>
 <p>
   <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
@@ -51,21 +53,28 @@ I build systems, compose atmospheres, and ship things that actually work.
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
 </p>
+</details>
 
-#### Backend & Systems
+<details open>
+<summary><b>⚙️ Backend & Systems</b></summary>
+<br/>
 <p>
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
   <img src="https://img.shields.io/badge/ROS-22314E?style=for-the-badge&logo=ros&logoColor=white" />
 </p>
+</details>
 
-#### Tools & Technologies
+<details open>
+<summary><b>🛠️ Tools & Technologies</b></summary>
+<br/>
 <p>
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/Leaflet-199900?style=for-the-badge&logo=leaflet&logoColor=white" />
   <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
 </p>
+</details>
 
 ---
 
@@ -258,12 +267,14 @@ Currently working on:
 
 <br/><br/>
 
-**Quiet work. Loud results.**
+**✨ Quiet work. Loud results. ✨**
 
 <br/>
 
 ---
 
 <sub>Built with ❤️ using Markdown • Maintained with Python tooling</sub>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=70A5FD&height=100&section=footer" />
 
 </div>
