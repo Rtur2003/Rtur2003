@@ -94,7 +94,7 @@ I build systems, compose atmospheres, and ship things that actually work.
 <p>Composing atmospheric soundtracks and digital music</p>
 </td>
 <td width="33%" align="center">
-<img src="https://img.icons8.com/clouds/100/000000/robot-2.png"/>
+<img src="https://img.icons8.com/clouds/100/000000/artificial-intelligence.png"/>
 <h3>Robotics</h3>
 <p>Working with ROS and automation systems</p>
 </td>
@@ -155,12 +155,14 @@ I build systems, compose atmospheres, and ship things that actually work.
 
 <br/><br/>
 
+<!-- Trophy widget temporarily disabled due to external service instability
 <img
   src="https://github-profile-trophy.vercel.app/?username=Rtur2003&theme=onestar&margin-w=10&no-frame=true"
   width="90%"
 />
 
 <br/><br/>
+-->
 
 <img 
   src="https://raw.githubusercontent.com/Rtur2003/Rtur2003/output/github-contribution-grid-snake-dark.svg" 
@@ -194,7 +196,7 @@ Working on smart city systems, AI integration, and robotics development.</p>
 <div align="center">
 
 <img
-  src="https://media.tenor.com/q36gm1J3y74AAAAC/loop-cyberpunk.gif"
+  src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif"
   width="400"
 />
 
