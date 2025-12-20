@@ -1,7 +1,8 @@
 <div align="center">
 
-<h1>Hasan Arthur Altuntaş</h1>
-<h3>Creator • Developer • Composer</h3>
+# Hasan Arthur Altuntaş
+
+### Creator • Developer • Composer
 
 <p>
 I build systems, compose atmospheres, and ship things that actually work.
@@ -15,17 +16,34 @@ I build systems, compose atmospheres, and ship things that actually work.
 
 <br/><br/>
 
-<!-- Typing SVG -->
 <p>
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1000&color=70A5FD&center=true&vCenter=true&width=435&lines=Full+Stack+Developer;Music+Composer;Robotics+Enthusiast;Problem+Solver" alt="Typing SVG" />
 </p>
 
-<br/>
+<p>
+  <a href="https://github.com/Rtur2003/Rtur2003/actions/workflows/link-check.yml">
+    <img src="https://github.com/Rtur2003/Rtur2003/actions/workflows/link-check.yml/badge.svg" alt="Link Validation" />
+  </a>
+  <a href="https://github.com/Rtur2003/Rtur2003/actions/workflows/snake.yml">
+    <img src="https://github.com/Rtur2003/Rtur2003/actions/workflows/snake.yml/badge.svg" alt="Snake Animation" />
+  </a>
+  <img src="https://img.shields.io/github/license/Rtur2003/Rtur2003" alt="License" />
+  <img src="https://img.shields.io/github/last-commit/Rtur2003/Rtur2003" alt="Last Commit" />
+</p>
 
-<!-- Tech Stack -->
-<h3>🚀 Tech Stack</h3>
+<p>
+  <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#-connect-with-me">Connect</a> •
+  <a href="#-currently-working-on">Current Work</a> •
+  <a href="#-github-statistics">Statistics</a> •
+  <a href="#featured-projects">Projects</a>
+</p>
 
-<h4>Frontend Development</h4>
+---
+
+## 🚀 Tech Stack
+
+#### Frontend Development
 <p>
   <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
@@ -34,14 +52,14 @@ I build systems, compose atmospheres, and ship things that actually work.
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
 </p>
 
-<h4>Backend & Systems</h4>
+#### Backend & Systems
 <p>
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
   <img src="https://img.shields.io/badge/ROS-22314E?style=for-the-badge&logo=ros&logoColor=white" />
 </p>
 
-<h4>Tools & Technologies</h4>
+#### Tools & Technologies
 <p>
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/Leaflet-199900?style=for-the-badge&logo=leaflet&logoColor=white" />
@@ -49,10 +67,9 @@ I build systems, compose atmospheres, and ship things that actually work.
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
 </p>
 
-<br/>
+---
 
-<!-- Links -->
-<h3>🔗 Connect With Me</h3>
+## 🔗 Connect With Me
 
 <a href="https://hasanarthuraltuntas.com.tr">
   <img src="https://img.shields.io/badge/Portfolio-111111?style=for-the-badge&logo=google-chrome&logoColor=white" />
@@ -79,7 +96,7 @@ I build systems, compose atmospheres, and ship things that actually work.
 
 <div align="center">
 
-## 🎯 What I Do
+### What I Do
 
 <table>
 <tr>
@@ -107,7 +124,7 @@ I build systems, compose atmospheres, and ship things that actually work.
 
 <div align="center">
 
-## 💼 Currently Working On
+### Currently Working On
 
 🔭 **Smart City Systems** - Urban data visualization platforms  
 🌱 **AI Integration** - Exploring AI-assisted content systems  
@@ -120,7 +137,7 @@ I build systems, compose atmospheres, and ship things that actually work.
 
 <div align="center">
 
-## 📊 GitHub Statistics
+### GitHub Statistics
 
 <img
   src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Rtur2003&theme=tokyonight"
@@ -175,19 +192,33 @@ I build systems, compose atmospheres, and ship things that actually work.
 
 <div align="center">
 
-## Featured Projects
+### Featured Projects
 
-<p><b>VoteBot</b><br/>
-Python-based automation experiments focused on reliability and scale.</p>
+<table>
+<tr>
+<td width="50%">
+
+#### 🤖 VoteBot
+Python-based automation experiments focused on reliability and scale.
+
+**Tech:** Python, Automation
 
 <a href="https://github.com/Rtur2003/VoteBot">
-  <img src="https://img.shields.io/badge/Python_Project-181717?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/View_Project-181717?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 
-<br/><br/>
+</td>
+<td width="50%">
 
-<p><b>More projects coming soon...</b><br/>
-Working on smart city systems, AI integration, and robotics development.</p>
+#### 🚧 More Coming Soon
+Currently working on:
+- 🏙️ Smart city systems
+- 🤖 AI integration
+- 🔧 Robotics development
+
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -198,10 +229,17 @@ Working on smart city systems, AI integration, and robotics development.</p>
 <img
   src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif"
   width="400"
+  alt="Coding animation"
 />
 
 <br/><br/>
 
-<b>Quiet work. Loud results.</b>
+**Quiet work. Loud results.**
+
+<br/>
+
+---
+
+<sub>Built with ❤️ using Markdown • Maintained with Python tooling</sub>
 
 </div>
