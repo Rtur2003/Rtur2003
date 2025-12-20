@@ -97,7 +97,9 @@ class LinkValidator:
                 requests.exceptions.ConnectionError,
             ) as e:
                 if attempt < self.config.max_retries - 1:
-                    wait_time = self.config.retry_base**attempt
+                    wait_time = min(
+                        self.config.retry_base**attempt, self.config.max_wait_time
+                    )
                     logger.debug(
                         f"Retry {attempt + 1}/{self.config.max_retries} for {url} "
                         f"after {wait_time}s"

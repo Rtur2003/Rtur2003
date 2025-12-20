@@ -13,6 +13,7 @@ class TestValidationConfig:
         assert config.timeout == 10
         assert config.max_retries == 3
         assert config.retry_base == 2
+        assert config.max_wait_time == 30
         assert config.max_url_length == 2048
         assert config.max_timeout == 300
 
@@ -44,6 +45,10 @@ class TestValidationConfig:
     def test_validation_invalid_max_url_length(self) -> None:
         with pytest.raises(ValueError, match="max_url_length must be positive"):
             ValidationConfig(max_url_length=-1)
+
+    def test_validation_invalid_max_wait_time(self) -> None:
+        with pytest.raises(ValueError, match="max_wait_time must be positive"):
+            ValidationConfig(max_wait_time=0)
 
 
 class TestLoadConfig:
