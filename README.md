@@ -101,17 +101,17 @@ I build systems, compose atmospheres, and ship things that actually work.
 <table>
 <tr>
 <td width="33%" align="center">
-<img src="https://img.icons8.com/clouds/100/000000/code.png"/>
+<h2>💻</h2>
 <h3>Development</h3>
 <p>Building scalable web applications and systems with modern frameworks</p>
 </td>
 <td width="33%" align="center">
-<img src="https://img.icons8.com/clouds/100/000000/music.png"/>
+<h2>🎵</h2>
 <h3>Music Production</h3>
 <p>Composing atmospheric soundtracks and digital music</p>
 </td>
 <td width="33%" align="center">
-<img src="https://img.icons8.com/clouds/100/000000/artificial-intelligence.png"/>
+<h2>🤖</h2>
 <h3>Robotics</h3>
 <p>Working with ROS and automation systems</p>
 </td>
