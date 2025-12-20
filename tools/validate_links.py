@@ -12,10 +12,25 @@ import sys
 import time
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Optional
 from urllib.parse import urlparse
 
 import requests
 from requests.exceptions import RequestException
+
+# Handle both direct script execution and module import
+if __package__ is None or __package__ == "":
+    # Direct script execution - add parent to path
+    import sys
+    from pathlib import Path
+
+    parent_dir = Path(__file__).parent.parent
+    if str(parent_dir) not in sys.path:
+        sys.path.insert(0, str(parent_dir))
+    from tools.config import ValidationConfig
+else:
+    # Module import - use relative import
+    from .config import ValidationConfig
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
@@ -35,20 +50,17 @@ class ValidationResult:
 class LinkValidator:
     """Validates links in markdown content."""
 
-    RETRY_BASE = 2
-    MAX_RETRIES = 3
+    def __init__(self, config: Optional[ValidationConfig] = None):
+        """
+        Initialize validator with configuration.
 
-    def __init__(self, timeout: int = 10):
-        if timeout <= 0:
-            raise ValueError("Timeout must be positive")
-        if timeout > 300:
-            raise ValueError("Timeout exceeds maximum allowed value of 300 seconds")
-        self.timeout = timeout
+        Args:
+            config: Optional ValidationConfig instance. Uses defaults if not provided.
+        """
+        self.config = config or ValidationConfig()
         self.session = requests.Session()
-        self.session.headers.update(
-            {"User-Agent": "Mozilla/5.0 (compatible; LinkValidator/1.0)"}
-        )
-        logger.debug(f"LinkValidator initialized with timeout={timeout}s")
+        self.session.headers.update({"User-Agent": self.config.user_agent})
+        logger.debug(f"LinkValidator initialized with timeout={self.config.timeout}s")
 
     def extract_links(self, content: str) -> list[str]:
         """Extract all URLs from markdown content."""
@@ -72,19 +84,19 @@ class LinkValidator:
         """
         if not isinstance(url, str) or not url:
             return ValidationResult(url, False, "Error: Invalid URL format")
-        if len(url) > 2048:
+        if len(url) > self.config.max_url_length:
             return ValidationResult(url, False, "Error: URL exceeds maximum length")
 
-        for attempt in range(self.MAX_RETRIES):
+        for attempt in range(self.config.max_retries):
             try:
                 response = self.session.head(
-                    url, timeout=self.timeout, allow_redirects=True
+                    url, timeout=self.config.timeout, allow_redirects=True
                 )
 
                 # Some servers reject HEAD, try GET on client errors
                 if response.status_code >= 400:
                     response = self.session.get(
-                        url, timeout=self.timeout, allow_redirects=True
+                        url, timeout=self.config.timeout, allow_redirects=True
                     )
 
                 is_valid = response.status_code < 400
@@ -96,10 +108,12 @@ class LinkValidator:
                 requests.exceptions.Timeout,
                 requests.exceptions.ConnectionError,
             ) as e:
-                if attempt < self.MAX_RETRIES - 1:
-                    wait_time = self.RETRY_BASE**attempt
+                if attempt < self.config.max_retries - 1:
+                    wait_time = min(
+                        self.config.retry_base**attempt, self.config.max_wait_time
+                    )
                     logger.debug(
-                        f"Retry {attempt + 1}/{self.MAX_RETRIES} for {url} "
+                        f"Retry {attempt + 1}/{self.config.max_retries} for {url} "
                         f"after {wait_time}s"
                     )
                     time.sleep(wait_time)
