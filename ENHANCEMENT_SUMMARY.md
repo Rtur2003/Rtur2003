@@ -50,6 +50,8 @@ This document summarizes the comprehensive code quality improvements, custom fon
 - **IM Fell Double Pica** (Regular and Italic) - Classical serif typeface
 - **Portmanteau** (OTF and TTF formats) - Display font for headings
 
+**Note:** These fonts are provided as design resources for external web projects and personal websites. GitHub profile READMEs do not support custom fonts due to rendering limitations.
+
 #### Files Created
 - `assets/fonts/IMFELLDOUBLEPICA-REGULAR.TTF`
 - `assets/fonts/IMFELLDOUBLEPICA-ITALIC.TTF`
@@ -59,10 +61,11 @@ This document summarizes the comprehensive code quality improvements, custom fon
 - `assets/style.css` - CSS template for web integration
 
 #### Integration
-- Updated main README with typography section
-- Documented font usage for web projects
+- Fonts available in `assets/fonts/` directory
+- Documented font usage for external web projects
 - Provided installation instructions for desktop applications
 - Added CSS examples for font implementation
+- Clarified that fonts are for external use, not GitHub profile itself
 
 ### 4. Comprehensive Documentation
 
@@ -200,7 +203,7 @@ Rtur2003/
 ✅ Better documentation for understanding how to use the tools
 ✅ Clear examples for common use cases
 ✅ Troubleshooting guide for common issues
-✅ Custom fonts available for branding consistency
+✅ Custom fonts available as design resources for external projects
 
 ### Developer Perspective
 ✅ Comprehensive docstrings for easy code navigation
@@ -236,7 +239,7 @@ This enhancement represents a significant improvement in:
 - **Documentation**: Extensive guides for users, developers, and maintainers
 - **Modularity**: Clear separation of concerns and modular design
 - **Security**: No vulnerabilities, proper input validation
-- **User Experience**: Custom fonts and branding consistency
+- **User Experience**: Custom fonts provided as design resources for external projects
 
 All changes are backward compatible, maintain existing functionality, and follow established coding standards. The repository is now well-documented, thoroughly tested, and ready for continued development.
 

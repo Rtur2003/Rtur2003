@@ -255,21 +255,7 @@ Currently working on:
 
 </div>
 
----
 
-<div align="center">
-
-### 🎨 Design & Typography
-
-This profile uses custom typography from the [my_music_page](https://github.com/Rtur2003/my_music_page) project:
-- **IM Fell Double Pica** - An elegant serif typeface
-- **Portmanteau** - A distinctive display font
-
-Custom fonts are available in [`assets/fonts/`](./assets/fonts/) for use in projects and documents.
-
-</div>
-
----
 
 <div align="center">
 
