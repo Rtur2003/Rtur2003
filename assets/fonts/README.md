@@ -1,6 +1,8 @@
 # Custom Fonts
 
-This directory contains custom fonts used in the profile branding and documentation.
+This directory contains custom fonts for use in **external web projects and applications**. 
+
+**Note:** GitHub profile READMEs do not support custom fonts or CSS. These fonts are provided for use in personal websites, portfolio projects, and other applications outside of GitHub.
 
 ## Fonts
 

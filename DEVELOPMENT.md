@@ -48,7 +48,7 @@ This repository contains the GitHub profile README for Hasan Arthur Altuntaş, a
 
 ### Custom Fonts
 
-This repository includes custom typography for professional branding:
+This repository includes custom typography for use in **external web projects** (not for the GitHub profile itself, as GitHub doesn't support custom fonts):
 
 - **IM Fell Double Pica** - Classical serif typeface for body text
 - **Portmanteau** - Distinctive display font for headings
@@ -60,10 +60,7 @@ This repository includes custom typography for professional branding:
 - [assets/fonts/PREVIEW.md](assets/fonts/PREVIEW.md) - Font preview and pairing recommendations
 - [assets/style.css](assets/style.css) - CSS template for web integration
 
-**Integration:** The fonts are referenced in:
-- Main profile README with typography section
-- All documentation files
-- CSS template with @font-face declarations
+**Note:** These fonts are provided as design resources for personal websites and portfolio projects. They cannot be used in GitHub profile READMEs due to GitHub's rendering limitations.
 
 ## Setup
 

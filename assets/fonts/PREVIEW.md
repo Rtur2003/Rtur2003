@@ -1,6 +1,8 @@
 # Font Preview & Usage Guide
 
-This document showcases the custom fonts and provides pairing recommendations.
+This document showcases the custom fonts and provides pairing recommendations for **external web projects**.
+
+**Important:** These fonts are for use in personal websites, portfolio projects, and applications. GitHub profile READMEs do not support custom fonts or external CSS.
 
 ## 📖 IM Fell Double Pica
 
