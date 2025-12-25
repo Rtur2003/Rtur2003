@@ -6,9 +6,11 @@ This repository contains the GitHub profile README for Hasan Arthur Altuntaş, a
 
 ## Quick Links
 
-* [Contributing Guidelines](CONTRIBUTING.md)
-* [Code of Conduct](CODE_OF_CONDUCT.md)
-* [License](LICENSE)
+* [Usage Examples](docs/USAGE.md) - Detailed examples and integration guides
+* [Best Practices](docs/BEST_PRACTICES.md) - Code quality and development guidelines
+* [Contributing Guidelines](CONTRIBUTING.md) - How to contribute to this project
+* [Code of Conduct](CODE_OF_CONDUCT.md) - Community standards
+* [License](LICENSE) - MIT License
 
 ## Project Structure
 
