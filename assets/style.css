@@ -1,6 +1,9 @@
 /*
- * Custom styling for GitHub Profile README
+ * Custom styling template for external web projects
  * Uses custom fonts: IM Fell Double Pica and Portmanteau
+ * 
+ * Note: GitHub profile READMEs do not support custom CSS or fonts.
+ * This file is provided as a template for personal websites and external projects.
  */
 
 @font-face {
