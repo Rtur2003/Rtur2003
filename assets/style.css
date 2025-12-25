@@ -1,0 +1,35 @@
+/*
+ * Custom styling for GitHub Profile README
+ * Uses custom fonts: IM Fell Double Pica and Portmanteau
+ */
+
+@font-face {
+  font-family: 'IM Fell Double Pica';
+  src: url('./fonts/IMFELLDOUBLEPICA-REGULAR.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IM Fell Double Pica';
+  src: url('./fonts/IMFELLDOUBLEPICA-ITALIC.TTF') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Portmanteau';
+  src: url('./fonts/PORTMANTEAU-REGULAR.OTF') format('opentype'),
+       url('./fonts/PORTMANTEAU REGULAR.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply custom fonts to specific elements */
+.custom-font-heading {
+  font-family: 'Portmanteau', 'IM Fell Double Pica', Georgia, serif;
+}
+
+.custom-font-body {
+  font-family: 'IM Fell Double Pica', Georgia, serif;
+}
