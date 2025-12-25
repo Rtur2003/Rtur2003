@@ -114,8 +114,9 @@ class LinkValidator:
             ValidationResult with url, validity status, and descriptive message
 
         Note:
-            URLs over max_url_length are rejected without making network requests.
-            Network errors are retried up to max_retries times with exponential backoff.
+            URLs over config.max_url_length are rejected without making network
+            requests. Network errors are retried up to config.max_retries times
+            with exponential backoff.
         """
         if not isinstance(url, str) or not url:
             return ValidationResult(url, False, "Error: Invalid URL format")

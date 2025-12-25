@@ -259,8 +259,10 @@ pip install -e .
 
 **Solution:**
 ```bash
-pip install types-requests
+pip install -e ".[dev]"
 ```
+
+The dev dependencies include all required type stubs.
 
 #### Tests Fail with Network Errors
 
