@@ -16,8 +16,16 @@ This repository contains the GitHub profile README for Hasan Arthur Altuntaş, a
 
 ```
 .
-├── tools/               # Python utilities
-│   ├── config.py        # Configuration management
+├── assets/             # Design assets
+│   ├── fonts/          # Custom typography (IM Fell Double Pica, Portmanteau)
+│   │   ├── README.md   # Font usage guide
+│   │   └── PREVIEW.md  # Font preview and pairing guide
+│   └── style.css       # CSS template for font integration
+├── docs/               # Documentation
+│   ├── USAGE.md        # Usage examples and integration guides
+│   └── BEST_PRACTICES.md  # Development guidelines
+├── tools/              # Python utilities
+│   ├── config.py       # Configuration management
 │   └── validate_links.py  # Link validation tool
 ├── tests/              # Unit tests
 │   ├── test_config.py
@@ -26,14 +34,36 @@ This repository contains the GitHub profile README for Hasan Arthur Altuntaş, a
 │   └── workflows/
 │       ├── snake.yml   # Contribution graph generator
 │       └── link-check.yml  # Link validation CI
-├── README.md           # Profile page
+├── README.md           # Profile page with custom typography
 ├── DEVELOPMENT.md      # This file
 ├── CONTRIBUTING.md     # Contribution guidelines
 ├── CODE_OF_CONDUCT.md  # Community guidelines
+├── ARCHITECTURE.md     # Architecture documentation
 ├── LICENSE             # MIT License
 ├── pyproject.toml      # Python project config
 └── requirements-dev.txt # Development dependencies
 ```
+
+## Design Assets
+
+### Custom Fonts
+
+This repository includes custom typography for professional branding:
+
+- **IM Fell Double Pica** - Classical serif typeface for body text
+- **Portmanteau** - Distinctive display font for headings
+
+**Location:** [`assets/fonts/`](assets/fonts/)
+
+**Documentation:**
+- [assets/fonts/README.md](assets/fonts/README.md) - Installation and usage guide
+- [assets/fonts/PREVIEW.md](assets/fonts/PREVIEW.md) - Font preview and pairing recommendations
+- [assets/style.css](assets/style.css) - CSS template for web integration
+
+**Integration:** The fonts are referenced in:
+- Main profile README with typography section
+- All documentation files
+- CSS template with @font-face declarations
 
 ## Setup
 
