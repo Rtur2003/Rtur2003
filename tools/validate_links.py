@@ -40,7 +40,14 @@ logger = logging.getLogger(__name__)
 
 @dataclass
 class ValidationResult:
-    """Result of URL validation."""
+    """
+    Result of URL validation.
+
+    Attributes:
+        url: The URL that was validated
+        is_valid: Whether the URL is accessible (True) or not (False)
+        status_message: Human-readable status (e.g., "HTTP 200" or "Error: Timeout")
+    """
 
     url: str
     is_valid: bool
@@ -63,7 +70,17 @@ class LinkValidator:
         logger.debug(f"LinkValidator initialized with timeout={self.config.timeout}s")
 
     def extract_links(self, content: str) -> list[str]:
-        """Extract all URLs from markdown content."""
+        """
+        Extract all HTTP/HTTPS URLs from markdown content.
+
+        Supports both markdown link syntax [text](url) and HTML href/src attributes.
+
+        Args:
+            content: Markdown or HTML content to extract links from
+
+        Returns:
+            List of HTTP/HTTPS URLs found in the content
+        """
         markdown_links = re.findall(r"\[([^\]]+)\]\(([^\)]+)\)", content)
         html_links = re.findall(r'(?:href|src)="([^"]+)"', content)
 
@@ -71,16 +88,34 @@ class LinkValidator:
         return [url for url in urls if self._is_http_url(url)]
 
     def _is_http_url(self, url: str) -> bool:
-        """Check if URL is an HTTP/HTTPS URL."""
+        """
+        Check if URL uses HTTP or HTTPS scheme.
+
+        Args:
+            url: URL to check
+
+        Returns:
+            True if URL starts with http:// or https://, False otherwise
+        """
         parsed = urlparse(url)
         return parsed.scheme in ("http", "https")
 
     def validate_url(self, url: str) -> ValidationResult:
         """
-        Validate a single URL.
+        Validate a single URL by making an HTTP request.
+
+        First attempts HEAD request, falls back to GET if HEAD returns 4xx error.
+        Implements exponential backoff retry logic for transient failures.
+
+        Args:
+            url: The URL to validate
 
         Returns:
-            ValidationResult with url, validity status, and message
+            ValidationResult with url, validity status, and descriptive message
+
+        Note:
+            URLs over max_url_length are rejected without making network requests.
+            Network errors are retried up to max_retries times with exponential backoff.
         """
         if not isinstance(url, str) or not url:
             return ValidationResult(url, False, "Error: Invalid URL format")
@@ -125,7 +160,20 @@ class LinkValidator:
         return ValidationResult(url, False, "Error: Unexpected validation failure")
 
     def validate_file(self, filepath: Path) -> list[ValidationResult]:
-        """Validate all links in a file."""
+        """
+        Validate all HTTP/HTTPS links in a markdown file.
+
+        Args:
+            filepath: Path object pointing to the file to validate
+
+        Returns:
+            List of ValidationResult objects, one per URL found
+
+        Raises:
+            TypeError: If filepath is not a Path object
+            FileNotFoundError: If the file does not exist
+            ValueError: If path is not a file or contains invalid UTF-8
+        """
         if not isinstance(filepath, Path):
             raise TypeError("filepath must be a Path object")
         if not filepath.exists():
@@ -154,7 +202,16 @@ class LinkValidator:
 
 
 def main() -> None:
-    """CLI entry point."""
+    """
+    CLI entry point for link validation.
+
+    Usage:
+        python validate_links.py <markdown_file>
+
+    Exit codes:
+        0: All links are valid
+        1: One or more links failed validation or file not found
+    """
     if len(sys.argv) < 2:
         print("Usage: python validate_links.py <markdown_file>")
         sys.exit(1)

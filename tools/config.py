@@ -14,7 +14,21 @@ logger = logging.getLogger(__name__)
 
 @dataclass
 class ValidationConfig:
-    """Configuration for link validation behavior."""
+    """
+    Configuration for link validation behavior.
+
+    Attributes:
+        timeout: HTTP request timeout in seconds (1-300)
+        max_retries: Number of retry attempts for transient failures (0+)
+        retry_base: Base for exponential backoff calculation (1+)
+        max_wait_time: Maximum wait time between retries in seconds (1+)
+        user_agent: User-Agent header for HTTP requests
+        max_url_length: Maximum allowed URL length in characters (1+)
+        max_timeout: Maximum allowed timeout value in seconds
+
+    Raises:
+        ValueError: If any configuration value violates constraints
+    """
 
     timeout: int = 10
     max_retries: int = 3
