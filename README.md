@@ -277,4 +277,5 @@ Currently working on:
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=70A5FD&height=100&section=footer" />
 
+
 </div>
