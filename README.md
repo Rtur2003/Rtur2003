@@ -19,9 +19,7 @@
 <p>
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1000&color=70A5FD&center=true&vCenter=true&width=435&lines=Full+Stack+Developer;Music+Composer;Robotics+Enthusiast;Problem+Solver" alt="Typing SVG" />
 </p>
-<p>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rtur2003&layout=compact&locale=en" />
-</p>
+
 <p>
   <a href="https://github.com/Rtur2003/Rtur2003/actions/workflows/link-check.yml">
     <img src="https://github.com/Rtur2003/Rtur2003/actions/workflows/link-check.yml/badge.svg" alt="Link Validation" />
