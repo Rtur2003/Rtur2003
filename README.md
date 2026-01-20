@@ -47,7 +47,6 @@
 <summary><b>🎨 Frontend Development</b></summary>
 <br/>
 <p>
-  <img src="https://github-readme-stats.vercel.app/api?username=Rtur2003&show_icons=true&theme=dark&locale=en" />
   <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111" />
@@ -206,19 +205,20 @@ ROS-based automation experiments
 
 <br/><br/>
 
-<!-- Trophy widget temporarily disabled due to external service instability
+
 <img
   src="https://github-profile-trophy.vercel.app/?username=Rtur2003&theme=onestar&margin-w=10&no-frame=true"
   width="90%"
 />
 
 <br/><br/>
--->
+
 
 <img 
   src="https://raw.githubusercontent.com/Rtur2003/Rtur2003/output/github-contribution-grid-snake-dark.svg" 
   alt="GitHub Contribution Snake"
 />
+<img src="https://github-readme-stats.vercel.app/api?username=Rtur2003&show_icons=true&theme=dark&locale=en" />
 
 </div>
 
