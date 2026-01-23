@@ -2,7 +2,7 @@
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=70A5FD&height=120&section=header&text=Hasan%20Arthur%20Altuntaş&fontSize=35&fontColor=fff&animation=fadeIn&fontAlignY=38" />
 
-### 🎨 Creator • 💻 Developer • 🎵 Composer
+###  Creator •  Developer •  Composer
 
 <p>
 <i>I build systems, compose atmospheres, and ship things that actually work.</i>
@@ -41,7 +41,7 @@
 
 ---
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 <details open>
 <summary><b>🎨 Frontend Development</b></summary>
