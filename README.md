@@ -246,9 +246,8 @@ Python-based automation experiments focused on reliability and scale.
 
 #### 🚧 More Coming Soon
 Currently working on:
-- 🏙️ Smart city systems
-- 🤖 AI integration
-- 🔧 Robotics development
+- AI integration
+- Robotics development
 
 </td>
 </tr>
