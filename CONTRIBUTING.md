@@ -7,7 +7,7 @@ Thank you for considering contributing to this project!
 1. **Fork and clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/Rtur2003.git
+   git clone https://github.com/Rtur2003/Rtur2003.git
    cd Rtur2003
    ```
 
