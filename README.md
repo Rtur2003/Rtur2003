@@ -1,16 +1,18 @@
-Hi, I'm Hasan. I'm a computer engineering in Turkey. Most of my time goes into building web applications, Python audio and data tools, and occasional hardware projects.
+# Hasan Arthur Altuntaş
 
-I also compose instrumental soundtracks, released on [Spotify](https://open.spotify.com/intl-tr/artist/6D5NDnftFDOelT5ssMe0ef) and [YouTube](https://www.youtube.com/@HasanArthurAltunta%C5%9F).
+Computer engineering student based in Turkey. I build web applications, Python tools for audio and data analysis, and occasional hardware projects.
 
-### Projects
+I also compose instrumental music, released on [Spotify](https://open.spotify.com/intl-tr/artist/6D5NDnftFDOelT5ssMe0ef) and [YouTube](https://www.youtube.com/@HasanArthurAltunta%C5%9F).
 
-- **[CrownCode](https://github.com/Rtur2003/CrownCode):** My main site and project hub, including the web interface for AURIS, an audio signal analysis app. Built with Next.js, Cloudflare Workers, and FastAPI.
-- **[music-analize](https://github.com/Rtur2003/music-analize):** Python CLI and FastAPI tool that extracts acoustic features from audio files, detects genres, and exports HTML/PDF reports.
+## Selected Projects
 
-### Stack
+- [CrownCode](https://github.com/Rtur2003/CrownCode) - Project hub and web interface for AURIS, an application for audio signal analysis. Built with Next.js, Cloudflare Workers, and FastAPI.
+- [music-analize](https://github.com/Rtur2003/music-analize) - Python CLI and API for audio feature extraction, genre detection, and HTML/PDF report generation.
 
-Day to day I work in TypeScript and Python. Most of my recent code uses Next.js, React, FastAPI, Docker, and Cloudflare Workers, with Angular, Astro, and ROS depending on the project.
+## Tools and Technologies
 
-### Links
+TypeScript and Python are my primary languages. I use Next.js, React, FastAPI, Docker, and Cloudflare Workers in my recent work, along with Angular, Astro, and ROS for specific projects.
 
-[Portfolio](https://hasan-arthur-altuntas.com.tr) / [CrownCode](https://hasan-arthur-altuntas.xyz) / [LinkedIn](https://tr.linkedin.com/in/hasan-arthur-altuntas) / [ORCID](https://orcid.org/0009-0002-8302-7657)
+## Links
+
+[Portfolio](https://hasan-arthur-altuntas.com.tr) · [CrownCode](https://hasan-arthur-altuntas.xyz) · [LinkedIn](https://tr.linkedin.com/in/hasan-arthur-altuntas) · [ORCID](https://orcid.org/0009-0002-8302-7657)

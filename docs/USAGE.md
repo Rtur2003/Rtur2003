@@ -21,7 +21,7 @@ Validating links in: README.md
 
 Found 25 HTTP/HTTPS links to validate
 ✓ https://github.com/Rtur2003 - HTTP 200
-✓ https://hasanarthuraltuntas.com.tr - HTTP 200
+✓ https://hasan-arthur-altuntas.com.tr - HTTP 200
 ✓ https://www.youtube.com/@HasanArthurAltunta%C5%9F - HTTP 200
 ✗ https://example-broken-link.com - Error: ConnectionError
 
